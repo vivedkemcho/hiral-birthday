@@ -1,0 +1,12 @@
+body {
+    background: url('https://source.unsplash.com/1600x900/?wedding,romantic') no-repeat center center/cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container { padding: 50px; animation: slideIn 2s ease-in-out; }
+@keyframes slideIn { from { transform: translateX(100vw); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+h1 { font-size: 50px; color: white; text-shadow: 0 0 10px red; }
+p { font-size: 20px; color: white; opacity: 0; animation: fadeIn 3s ease-in-out forwards; }
+@keyframes fadeIn { 0% { opacity: 0; transform: translateY(-20px); } 100% { opacity: 1; transform: translateY(0); } }
+.special-btn { background: red; color: white; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; margin-top: 20px; border-radius: 5px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+.special-btn:hover { background: darkred; }
